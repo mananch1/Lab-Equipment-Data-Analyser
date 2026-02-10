@@ -40,9 +40,9 @@ const Upload = ({ onUploadSuccess }) => {
     };
 
     return (
-        <div className="card">
+        <div className="card" style={{ textAlign: 'center' }}>
             <h2>Upload CSV</h2>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', alignItems: 'center' }}>
                 <input type="file" accept=".csv" onChange={handleFileChange} />
                 <button
                     className="btn btn-primary"

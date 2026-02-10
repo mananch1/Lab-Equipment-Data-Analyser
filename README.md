@@ -2,59 +2,42 @@
 
 A modern, hybrid web and desktop application for analyzing and visualizing chemical equipment data.
 
+**Deployment link**: [https://lab-equipment-data-analyser-fronten.vercel.app/](https://lab-equipment-data-analyser-fronten.vercel.app/)
+
 ## Features
 - **CSV Upload**: Inspect and analyze equipment data files.
 - **Analytics Dashboard**:
   - Real-time calculation of averages and distribution.
-  - Interactive charts (Bar & Pie) with "Deep Ocean" aesthetic.
+  - Interactive charts (Bar & Pie).
   - **Category Filtering**: Drill down averages by equipment type.
 - **History**: Tracks past uploads for quick access.
 - **Multi-Platform**:
   - **Web**: React (Vite) + Chart.js with responsive Glassmorphism UI.
+    - **Live Demo**: [https://lab-equipment-data-analyser-fronten.vercel.app/](https://lab-equipment-data-analyser-fronten.vercel.app/)
   - **Desktop**: Python (PyQt5) + Matplotlib for local usage.
   - **Backend**: Django REST Framework + Pandas for robust data processing.
 
+## Documentation
+- [API Routes](docs/api_routes.md): Detailed API documentation.
+
 ## Quick Start
 
-### 1. Backend Setup (Django)
-```bash
-# navigate to backend
-cd backend
-# Create/Activate Virtual Environment
-python -m venv venv
-..\venv\Scripts\activate  # Windows
-# Install Dependencies
-pip install -r requirements.txt
-# Run Migrations
-python manage.py migrate
-# Start Server (Accessible on LAN)
-python manage.py runserver 0.0.0.0:8000
-```
+For detailed setup instructions for Backend, Web, and Desktop, please refer to the **[Setup Guide](docs/setup.md)**.
 
-### 2. Web Frontend (React)
+### Brief Overview
 ```bash
-cd frontend-web
-npm install
-npm run dev -- --host
-```
-Access via `http://localhost:5173` or your local IP (e.g., `http://192.168.x.x:5173`) for mobile testing.
+# 1. Backend
+cd backend && pip install -r requirements.txt && python manage.py runserver
 
-### 3. Desktop App (PyQt5)
-Ensure backend is running, then:
-```bash
-cd frontend-desktop
-..\venv\Scripts\python.exe main.py
+# 2. Frontend
+cd frontend-web && npm install && npm run dev
 ```
 
 ## Deployment
-See [deployment.md](deployment.md) for detailed instructions on deploying the Backend to **Render** and Frontend to **Vercel**.
+Currently deploying the Backend to **Render** and Frontend to **Vercel**.
 
 ## Mobile Access
-To access the app from your phone:
-1. Ensure your computer and phone are on the same Wi-Fi.
-2. Run backend with `0.0.0.0:8000`.
-3. Update `frontend-web/src/config.js` with your computer's IP.
-4. Open the frontend URL (e.g., `http://192.168.0.103:5173`) on your phone.
+See [Setup Guide](docs/setup.md#mobile-access-configuration).
 
 ## Sample Data
 Use `sample_equipment_data.csv` located in the root directory for testing.

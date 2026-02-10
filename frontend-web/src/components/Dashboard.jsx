@@ -55,7 +55,7 @@ const Dashboard = ({ data }) => {
 
     return (
         <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '2rem' }}>
+            <div className="dashboard-header">
                 <div>
                     <h2 style={{ marginBottom: '0.5rem', color: '#f1f5f9' }}>Analytics Dashboard</h2>
                     <p style={{ color: 'var(--text-secondary)', margin: 0 }}>Real-time equipment parameter analysis</p>
@@ -68,7 +68,7 @@ const Dashboard = ({ data }) => {
 
             <div className="stats-grid">
                 <div className="card" style={{ height: '400px', marginBottom: 0 }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem' }}>
+                    <div className="chart-header">
                         <h3 style={{ margin: 0 }}>Average Parameters</h3>
                         <div style={{ position: 'relative' }}>
                             <select
