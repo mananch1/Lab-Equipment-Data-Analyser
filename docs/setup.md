@@ -98,7 +98,7 @@ The desktop application provides a native experience using Python and PyQt5.
 3.  **Run the Application:**
     Use the python executable from your backend virtual environment (or create a new one if preferred):
     ```bash
-    ..\backend\venv\Scripts\python.exe main.py
+    ..\venv\Scripts\python.exe main.py
     ```
 
 ---

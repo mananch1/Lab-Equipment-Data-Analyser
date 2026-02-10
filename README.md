@@ -4,6 +4,9 @@ A modern, hybrid web and desktop application for analyzing and visualizing chemi
 
 **Deployment link**: [https://lab-equipment-data-analyser-fronten.vercel.app/](https://lab-equipment-data-analyser-fronten.vercel.app/)
 
+![Result 2](docs/img2.png)
+*Analysis View*
+
 ## Features
 - **CSV Upload**: Inspect and analyze equipment data files.
 - **Analytics Dashboard**:
@@ -41,3 +44,14 @@ See [Setup Guide](docs/setup.md#mobile-access-configuration).
 
 ## Sample Data
 Use `sample_equipment_data.csv` located in the root directory for testing.
+
+## Screenshots
+
+![Result 1](docs/img1.png)
+*Dashboard Overview*
+
+![Result 2](docs/img2.png)
+*Analysis View*
+
+![Result 3](docs/img3.png)
+*Upload Interface*
