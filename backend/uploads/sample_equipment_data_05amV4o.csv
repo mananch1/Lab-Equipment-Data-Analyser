@@ -1,0 +1,11 @@
+Equipment Name,Type,Flowrate,Pressure,Temperature
+Reactor-001,Reactor,150.5,30.2,85.5
+Pump-012,Pump,200.0,45.6,60.2
+HeatEx-055,Heat Exchanger,120.3,25.4,120.0
+Reactor-002,Reactor,160.0,32.1,88.4
+Tank-101,Storage Tank,0.0,1.2,25.0
+Dist-001,Distillation Column,300.5,50.0,150.2
+Pump-013,Pump,210.2,46.0,62.1
+Comp-004,Compressor,500.0,120.5,45.3
+Reactor-003,Reactor,145.2,29.8,84.2
+HeatEx-056,Heat Exchanger,125.6,26.0,118.5
