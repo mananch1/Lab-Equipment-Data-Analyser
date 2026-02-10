@@ -1,9 +1,6 @@
 django
 djangorestframework
 pandas
-matplotlib
-PyQt5
 django-cors-headers
-requests
 gunicorn
 whitenoise
